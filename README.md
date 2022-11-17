@@ -5,7 +5,10 @@
 
 <p align="left"> <a href="https://twitter.com/paulogebe" target="blank"><img src="https://img.shields.io/twitter/follow/paulogebe?logo=twitter&style=for-the-badge" alt="paulogebe" /></a> </p>
 
-- 🔭 I’m currently working on [Meta Bnb Site](https://meta-bnb-jadge.netlify.app)
+
+- 👨‍💻 I'm currently attending HNGI9 
+
+- 🔭 I’m currently working on HNG9 Stage 4 Task
 
 - 🌱 I’m currently learning **React, Javascript**
 
