@@ -7,7 +7,7 @@
 </p>
 
 
-- 👨‍💻 I'm currently attending HNGI9 
+- 👨‍💻 I'm currently attending HNG9 
 
 - 🔭 I’m currently working on HNG9 Stage 4 Task
 
