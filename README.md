@@ -7,7 +7,7 @@
 </p>
 
 
-- 🔭 I’m currently working on my [Travel Journal Site](https://github.com/Judge-Paul/travel-journey)
+- 🔭 I’m currently working on my [Travel Journal Site](https://travel-journal-jadge.netlify.app/)
 
 - 🌱 I’m currently learning **React, Javascript**
 
