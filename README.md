@@ -7,9 +7,7 @@
 </p>
 
 
-- 👨‍💻 I'm currently attending HNG9 
-
-- 🔭 I’m currently working on HNG9 Stage 4 Task
+- 🔭 I’m currently working on my [Travel Journey Site](https://github.com/Judge-Paul/travel-journey)
 
 - 🌱 I’m currently learning **React, Javascript**
 
