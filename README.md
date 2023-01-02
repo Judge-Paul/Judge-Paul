@@ -7,7 +7,7 @@
 </p>
 
 
-- 🔭 I’m currently working on my [Meme Generator site](https://github.com/Judge-Paul/meme-generator)
+- 🔭 I’m currently working on my [Tenzies Game](https://tenzies-judge-paul.vercel.app/)
 
 - 🌱 I’m currently learning **React, Javascript**
 
