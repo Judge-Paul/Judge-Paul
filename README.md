@@ -7,13 +7,13 @@
 </p>
 
 
-- 🔭 I’m currently working on my [Tenzies Game](https://tenzies-judge-paul.vercel.app/)
+- 🔭 I’m currently working on [Quizzical](https://github.com/Judge-Paul/quizzical)
 
 - 🌱 I’m currently learning **React, Javascript**
 
 - 👯 I’m looking to collaborate on **Full Stack Web Design Projects**
 
-- 🏢 My most recent [Project](https://meme-gen-jadge.vercel.app) (N.B SCREEN RESOLUTION OF 570 X 570 WORKS BEST)
+- 🏢 My most recent [Project](https://tenzies-judge-paul.vercel.app) (N.B NOT FULLY RESPONSIVE)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
