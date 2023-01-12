@@ -7,7 +7,7 @@
 </p>
 
 
-- 🔭 I’m currently working on [Quizzical](https://github.com/Judge-Paul/quizzical)
+- 🔭 I’m currently working on [Quizzical](https://github.com/Judge-Paul/quizzical) * It's currently showing me shege 😢
 
 - 🌱 I’m currently learning **React, Javascript**
 
