@@ -7,13 +7,13 @@
 </p>
 
 
-- 🔭 I’m currently working on My [Netflix Clone](https://github.com/Judge-Paul/netflix-clone) * It's currently showing me shege 😢
+- 🔭 I’m currently working on [JobWriteAI](https://github.com/Judge-Paul/jobwrite-ai)
 
 - 🌱 I’m currently learning **React, Javascript**
 
 - 👯 I’m looking to collaborate on **Full Stack Web Design Projects**
 
-- 🏢 My most recent [Project](https://quizzical-ivory.vercel.app/) (N.B NOT FULLY RESPONSIVE)
+- 🏢 My most recent [Project](https://quizzical-ivory.vercel.app/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
