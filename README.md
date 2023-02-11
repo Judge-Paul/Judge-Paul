@@ -9,7 +9,7 @@
 
 - 🔭 I’m currently working on [JobWriteAI](https://github.com/Judge-Paul/jobwrite-ai)
 
-- 🌱 I’m currently learning **React, Javascript**
+- 🌱 I’m currently learning **Javascript, Typescript**
 
 - 👯 I’m looking to collaborate on **Full Stack Web Design Projects**
 
