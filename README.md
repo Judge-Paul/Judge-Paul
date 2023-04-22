@@ -7,13 +7,13 @@
 </p>
 
 
-- 🔭 I’m currently working on [JobWriteAI](https://github.com/Judge-Paul/jobwrite-ai)
+- 🔭 I’m currently working on [NFT Marketplace](https://github.com/Judge-Paul/nft-marketplace)
 
 - 🌱 I’m currently learning **Javascript, Typescript**
 
 - 👯 I’m looking to collaborate on **Full Stack Web Design Projects**
 
-- 🏢 My most recent [Project](https://quizzical-ivory.vercel.app/)
+- 🏢 My most recent [Project](https://github.com/Judge-Paul/jobwrite-ai)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
