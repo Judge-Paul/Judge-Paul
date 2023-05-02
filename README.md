@@ -22,6 +22,6 @@
 
 
 <div style="display:flex;margin-bottom:15px;width:100%;justify-content:space-between;">
-<span><img width="97%" src="https://github-readme-stats.vercel.app/api?username=judge-paul&show_icons=true&locale=en" alt="judge-paul" /></span> <span><img width="97%" src="https://github-readme-streak-stats.herokuapp.com/?user=judge-paul&" alt="judge-paul" /></span></div>
+<span><img src="https://github-readme-stats.vercel.app/api?username=judge-paul&show_icons=true&locale=en" alt="judge-paul" /></span> <span><img src="https://github-readme-streak-stats.herokuapp.com/?user=judge-paul&" alt="judge-paul" /></span></div>
 
 <p><img height="400px" width="100%" src="https://wakatime.com/share/@paulogebe/8970b800-c138-49a4-8b7e-62eb221f11d0.svg" /></p>
