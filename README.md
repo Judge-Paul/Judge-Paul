@@ -1,10 +1,7 @@
 <h1 align="center">Hi 👋, I'm Judge-Paul Ogebe</h1>
 <h3 align="center">A passionate frontend developer from Nigeria</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=judge-paul&label=Profile%20views&color=0e75b6&style=flat" alt="judge-paul" /> </p>
-
-<p align="left"> <a href="https://twitter.com/paulogebe" target="blank"><img src="https://img.shields.io/twitter/follow/paulogebe?logo=twitter&style=for-the-badge" alt="paulogebe" /></a> <a><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
-</p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=judge-paul&label=Profile%20views&color=0e75b6&style=flat" alt="judge-paul" /> <img src="https://wakatime.com/badge/user/b17884f9-c855-452a-8160-490300ba4776.svg" alt="wakatime stats" /> </p>
 
 
 - 🔭 I’m currently working on [NFT Marketplace](https://github.com/Judge-Paul/nft-marketplace)
@@ -29,4 +26,4 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=judge-paul&" alt="judge-paul" /></p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=judge-paul&show_icons=true&locale=en&layout=compact" alt="judge-paul" /></p>
+<figure><embed src="https://wakatime.com/share/@paulogebe/7888d401-070d-4985-bd72-c9bf2628ffdb.svg"></embed></figure>
