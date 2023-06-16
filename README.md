@@ -50,10 +50,8 @@
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" title="TypeScript"/>
   </a>
-  <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer" title="Framer Motion">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 21" role="presentation" width="40" height="40">
-        <path d="M0 0h14v7H7zm0 7h7l7 7H7v7l-7-7z" fill="#000000"></path>
-    </svg>
+  <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer">
+    <img src="https://www.svgrepo.com/show/306070/framer.svg" alt="framermotion" width="40" height="40" title="Framer Motion"/>
   </a>
   <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40" title="Firebase"/>
