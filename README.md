@@ -8,7 +8,7 @@
 
 - 🌱 I’m currently learning **Javascript, Typescript**
 
-- 👯 I’m looking to collaborate on **Full Stack Web Design Projects**
+- 👯 I’m looking to collaborate on **Full Stack Web Development Projects**
 
 - 🏢 My most recent [Project](https://github.com/Judge-Paul/jobwrite-ai)
 
