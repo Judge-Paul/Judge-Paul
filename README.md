@@ -15,6 +15,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/paulogebe" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="paulogebe" height="30" width="40" /></a>
+<a href="https://instagram.com/paulogebe" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="paulogebe" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Tech Stack:</h3>
@@ -64,7 +65,9 @@
 
 
 
-<div style="display:flex;margin-bottom:15px;width:100%;justify-content:space-between;">
-<span><img width="98%" src="https://github-readme-stats.vercel.app/api?username=judge-paul&show_icons=true&locale=en" alt="judge-paul" /></span> <span><img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=judge-paul&" alt="judge-paul" /></span></div>
+<p width="100%">
+  <img width="47%" src="https://github-readme-stats.vercel.app/api?username=judge-paul&amp;show_icons=true&amp;locale=en" alt="judge-paul" />
+  <img width="47%" align="right" src="https://github-readme-streak-stats.herokuapp.com/?user=judge-paul&amp;" alt="judge-paul" />
+</p>
 
 <p><img height="400px" width="100%" src="https://wakatime.com/share/@paulogebe/8970b800-c138-49a4-8b7e-62eb221f11d0.svg" /></p>
