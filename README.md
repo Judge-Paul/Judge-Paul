@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Judge-Paul Ogebe</h1>
-<h3 align="center">A passionate frontend developer from Nigeria</h3>
+<h3 align="center">A frontend developer from Nigeria</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=judge-paul&label=Profile%20views&color=0e75b6&style=flat" alt="judge-paul" /> <img src="https://wakatime.com/badge/user/b17884f9-c855-452a-8160-490300ba4776.svg" alt="wakatime stats" /> </p>
 
