@@ -4,13 +4,13 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=judge-paul&label=Profile%20views&color=0e75b6&style=flat" alt="judge-paul" /> <img src="https://wakatime.com/badge/user/b17884f9-c855-452a-8160-490300ba4776.svg" alt="wakatime stats" /> </p>
 
 
-- 🔭 I’m currently working on [NFT Marketplace](https://github.com/Judge-Paul/nft-marketplace)
+- 🔭 I’m currently working on [CoverWriteAI](https://github.com/Judge-Paul/coverwrite-ai)
 
-- 🌱 I’m currently learning **Javascript, Typescript**
+- 🌱 I’m currently learning **Node.js**
 
 - 👯 I’m looking to collaborate on **Full Stack Web Development Projects**
 
-- 🏢 My most recent [Project](https://github.com/Judge-Paul/jobwrite-ai)
+- 🏢 My most recent [Project](https://github.com/Judge-Paul/nft-marketplace)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
