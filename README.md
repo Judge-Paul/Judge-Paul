@@ -1,12 +1,12 @@
 <h1 align="center">Hi 👋, I'm Judge-Paul Ogebe</h1>
-<h3 align="center">A frontend developer</h3>
+<h3 align="center">Frontend developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=judge-paul&label=Profile%20views&color=0e75b6&style=flat" alt="judge-paul" /> <img src="https://wakatime.com/badge/user/b17884f9-c855-452a-8160-490300ba4776.svg" alt="wakatime stats" /> </p>
 
 
 - 🔭 I’m currently working on [CoverWriteAI](https://github.com/Judge-Paul/coverwrite-ai)
 
-- 🌱 I’m currently learning **Node.js**
+- 🌱 I’m currently learning **TypeScript**
 
 - 👯 I’m looking to collaborate on **Full Stack Web Development Projects**
 
