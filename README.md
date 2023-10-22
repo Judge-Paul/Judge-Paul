@@ -54,11 +54,11 @@
     <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40" title="Firebase"/>
   </a>
   <a href="https://nextjs.org" target="_blank" rel="noreferrer">
-  <img src="URL_TO_NEXTJS_ICON" alt="nextjs" width="40" height="40" title="Next.js"/>
-</a>
-<a href="https://www.typescriptlang.org" target="_blank" rel="noreferrer">
-  <img src="URL_TO_TYPESCRIPT_ICON" alt="typescript" width="40" height="40" title="TypeScript"/>
-</a>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-line.svg" alt="nextjs" width="40" height="40" title="Next.js"/>
+  </a>
+  <a href="https://www.typescriptlang.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" title="TypeScript"/>
+  </a>
 </p>
 
 
