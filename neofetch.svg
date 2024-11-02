@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" font-family="Andale Mono,AndaleMono,Consolas,monospace" width="975px" height="550px" font-size="16px">
+<style>
+.keyColor {fill: #ffa657;}
+.valueColor {fill: #a5d6ff;}
+.addColor {fill: #3fb950;}
+.delColor {fill: #f85149;}
+.commentColor {fill: #8b949e;}
+text, tspan {white-space: pre;}
+</style>
+
+<rect width="1200px" height="510px" fill="#161b22" rx="15"/>
+
+<text x="33" y="40" fill="#c9d1d9" class="ascii">
+    <tspan x="33" y="40">********+=+*****++==--------=+*************</tspan>
+    <tspan x="33" y="60">******+++****=------------------+**********</tspan>
+    <tspan x="33" y="80">***+******+----------------------=*********</tspan>
+    <tspan x="33" y="100">********+--------------------------+*****++</tspan>
+    <tspan x="33" y="120">+++++++=------------=---------------***+++*</tspan>
+    <tspan x="33" y="140">++++++=-----=--------=--------------=++++*#</tspan>
+    <tspan x="33" y="160">=====------=---------=-=---=---------====*#</tspan>
+    <tspan x="33" y="180">+===----------===----==+=-===-----------=*#</tspan>
+    <tspan x="33" y="200">++==---------=+++----=+--==+=-----=---===**</tspan>
+    <tspan x="33" y="220">+=+===------+=-=+=--=+==*##*+----===---+***</tspan>
+    <tspan x="33" y="240">*+=+*------=+=+*#+=-==-=+%*------=++---+***</tspan>
+    <tspan x="33" y="260">**=+#==----++#=*#=-==---=+==+=--=+++=---+**</tspan>
+    <tspan x="33" y="280">##*#*=*----==--==---------===-=+=++*=---=+*</tspan>
+    <tspan x="33" y="300">#%*#*+*#+--=====------------===-=+*+=-----*</tspan>
+    <tspan x="33" y="320">++=#**+**#+--=------+*#*-------=***=-------</tspan>
+    <tspan x="33" y="340">#++==+#**%#+-==-----=+++--=---=++=---------</tspan>
+    <tspan x="33" y="360">@%#**%%*#%%#-=+=--------=---::::-==-----==-</tspan>
+    <tspan x="33" y="380">##****#**%%#-=++===+++++---::::::---=+=--==</tspan>
+    <tspan x="33" y="400">%%##%#%###%#-=+#*+*==+*=--:::--::::---==--+</tspan>
+    <tspan x="33" y="420">%%##%%*%@%@#-=*#%#=##*===-::---:::::---==-=</tspan>
+    <tspan x="33" y="440">#*++**%%%*#*--+#%%%#%%%+=---=-:::::----====</tspan>
+    <tspan x="33" y="460">**%%%%%%%#++--=*%%%%%#*+=-==-:::::::---====</tspan>
+    <tspan x="33" y="480">##*++*###%#*---*#%%#*==+==--::::::::---===+</tspan>
+</text>
+
+<text x="435" y="50" fill="#c9d1d9">
+    <tspan x="435" y="50">Judge-Paul@GitHub</tspan>
+    <tspan x="435" y="70">---------------</tspan>
+    <tspan x="435" y="90" class="keyColor">OS</tspan>: <tspan class="valueColor">Windows 11, Linux Mint, Arch Linux</tspan>
+    <tspan x="435" y="110" class="keyColor">Wakatime</tspan>: <tspan class="valueColor">1464 hours, 24 mins</tspan>
+    <tspan x="435" y="130" class="keyColor">IDE</tspan>: <tspan class="valueColor">VS Code, Sublime Text 3, Zed</tspan>
+    <tspan x="435" y="150" class="keyColor">Languages</tspan>: <tspan class="valueColor">JavaScript, TypeScript</tspan>
+    <tspan x="435" y="170" class="keyColor">Frameworks</tspan>: <tspan class="valueColor">React, Next.js, Express</tspan>
+
+    <tspan x="435" y="210" class="keyColor">Profile</tspan>:
+    <tspan x="435" y="230">——————</tspan>
+    <tspan x="435" y="250" class="keyColor">Role</tspan>: <tspan class="valueColor">Software Developer</tspan>
+    <tspan x="435" y="270" class="keyColor">Status</tspan>: <tspan class="valueColor">Cracked</tspan>
+    <tspan x="435" y="290" class="keyColor">Twitter</tspan>: <tspan class="valueColor">@jadge_dev</tspan>
+    <tspan x="435" y="310" class="keyColor">Portfolio</tspan>: <tspan class="valueColor">https://jadge.vercel.app</tspan>
+
+    <tspan x="435" y="350" class="keyColor">GitHub</tspan>:
+    <tspan x="435" y="370">——————</tspan>
+    <tspan x="435" y="390" class="keyColor">Audience</tspan>: <tspan class="valueColor">42 Followers | 75 Following</tspan>
+    <tspan x="435" y="410" class="keyColor">Repos</tspan>: <tspan class="valueColor">68 Total (39 Public | 29 Private)</tspan>
+    <tspan x="435" y="430" class="keyColor">Contributions</tspan>: <tspan class="valueColor">2087 (Aug 6, 2022 - Present)</tspan>
+    <tspan x="435" y="450" class="keyColor">Current Streak</tspan>: <tspan class="valueColor">0 (Nov 4)</tspan>
+    <tspan x="435" y="470" class="keyColor">Longest Streak</tspan>: <tspan class="valueColor">30 (Feb 4, 2023 - Mar 5, 2023)</tspan>
+<!-- <tspan x="435" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">Electrical and Computer Engineering Technology</tspan><tspan class="commentColor"> #CPET</tspan> -->
+</text>
+
+</svg>
