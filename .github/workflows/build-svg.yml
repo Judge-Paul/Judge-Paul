@@ -21,6 +21,8 @@ jobs:
 
       - name: Run Generate SVG script
         run: node generate-svg.js
+        env:
+          API_LEAGUE_KEY: ${{ secrets.API_LEAGUE_KEY }}
 
       - name: Upload SVG as an Artifact
         uses: actions/upload-pages-artifact@v3
