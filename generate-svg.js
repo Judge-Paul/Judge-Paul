@@ -259,4 +259,5 @@ ${svgText}
 </svg>
 `;
 
-fs.writeFileSync("neofetch.svg", svg);
+fs.mkdirSync("output", { recursive: true });
+fs.writeFileSync("output/neofetch.svg", svg);
