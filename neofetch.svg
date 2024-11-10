@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" font-family="Andale Mono,AndaleMono,Consolas,monospace" width="2500px" height="1282px" font-size="16px">
 <style>
-        .keyColor {fill: #ffa657;}
-        .valueColor {fill: #a5d6ff;}
-        .addColor {fill: #3fb950;}
-        .delColor {fill: #f85149;}
-        .commentColor {fill: #8b949e;}
-        text, tspan {white-space: pre;}
+	.keyColor {fill: #ffa657;}
+	.valueColor {fill: #a5d6ff;}
+	.addColor {fill: #3fb950;}
+	.delColor {fill: #f85149;}
+	.commentColor {fill: #8b949e;}
+	text, tspan {white-space: pre;}
 </style>
 
 <rect width="2500px" height="1282px" fill="#161b22" rx="15" />
