@@ -1,3 +1,3 @@
 <picture>
-    <image src="neofetch.svg" />
+    <image src="https://judge-paul.github.io/Judge-Paul/neofetch.svg" />
 </picture>

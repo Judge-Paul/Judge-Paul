@@ -23,6 +23,7 @@ jobs:
         run: node generate-svg.js
         env:
           API_LEAGUE_KEY: ${{ secrets.API_LEAGUE_KEY }}
+          GH_API_TOKEN: ${{ secrets.GH_API_TOKEN}}
 
       - name: Upload SVG as an Artifact
         uses: actions/upload-pages-artifact@v3
