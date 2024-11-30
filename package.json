@@ -1,0 +1,15 @@
+{
+	"name": "judge-paul",
+	"version": "1.0.0",
+	"main": "generate-svg.js",
+	"scripts": {
+		"build": "node --env-file=.env generate-svg.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
