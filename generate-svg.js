@@ -2,6 +2,7 @@ const fs = require("fs");
 
 const apiLeagueKey = process.env.API_LEAGUE_KEY;
 const githubToken = process.env.GH_API_TOKEN;
+const wakatimeKey = process.env.WAKATIME_API_KEY;
 
 async function getAsciiArtFromImage(imgUrl) {
 	const url = `https://api.apileague.com/convert-image-to-ascii-txt?width=125&height=125&api-key=${apiLeagueKey}&url=${imgUrl}`;
@@ -17,7 +18,7 @@ async function getAsciiArtFromImage(imgUrl) {
 function timeAgo(dateString) {
 	const now = new Date();
 	const past = new Date(dateString);
-	let diffInSeconds = Math.floor((now - past) / 1000); // Use 'let' here
+	let diffInSeconds = Math.floor((now - past) / 1000);
 
 	const units = [
 		{ name: "year", seconds: 31536000 }, // 365 days
@@ -43,6 +44,24 @@ function timeAgo(dateString) {
 		: "just now";
 }
 
+async function getTotalTime() {
+	const url = `https://wakatime.com/api/v1/users/current/all_time_since_today`;
+
+	const res = await fetch(url, {
+		headers: {
+			Authorization: `Basic ${wakatimeKey}`,
+		},
+	});
+
+	if (!res.ok) {
+		throw new Error("Res status:", res.status);
+	}
+
+	const data = await res.json();
+
+	return data.data.text;
+}
+
 async function getUserData() {
 	const url = `https://api.github.com/user`;
 
@@ -55,6 +74,7 @@ async function getUserData() {
 	}
 
 	const data = await res.json();
+	const totalTime = await getTotalTime();
 	return {
 		username: data?.login || "Judge-Paul",
 		profile_picture: data.avatar_url,
@@ -62,7 +82,7 @@ async function getUserData() {
 			{
 				items: [
 					{ label: "OS", value: "Windows 11, Linux Mint, Arch Linux" },
-					{ label: "Wakatime", value: "1464 hours, 24 mins" },
+					{ label: "Wakatime", value: totalTime },
 					{ label: "IDE", value: "VS Code, Sublime Text 3, Zed" },
 					{ label: "Languages", value: "JavaScript, TypeScript" },
 					{ label: "Frameworks", value: "React, Next.js, Express" },
@@ -73,7 +93,7 @@ async function getUserData() {
 				items: [
 					{ label: "Role", value: "Software Developer" },
 					{ label: "Status", value: "Cracked" },
-					{ label: "Twitter", value: "@jadge_dev" },
+					{ label: "Twitter", value: `@${data?.twitter_username}` },
 					{ label: "Portfolio", value: "https://jadge.vercel.app" },
 				],
 			},
