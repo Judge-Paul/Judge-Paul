@@ -1,2 +1,4 @@
 .env
 output
+package-lock.json
+node_modules

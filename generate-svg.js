@@ -1,4 +1,5 @@
-const fs = require("fs");
+import fs from "fs";
+import * as cheerio from "cheerio";
 
 const apiLeagueKey = process.env.API_LEAGUE_KEY;
 const githubToken = process.env.GH_API_TOKEN;
@@ -8,7 +9,9 @@ async function getAsciiArtFromImage(imgUrl) {
 	const url = `https://api.apileague.com/convert-image-to-ascii-txt?width=125&height=125&api-key=${apiLeagueKey}&url=${imgUrl}`;
 	const response = await fetch(url);
 	if (!response.ok) {
-		throw new Error(`Response status: ${response.status}`);
+		throw new Error(
+			`Response status: ${response.status}, Failed to get ASCII art`,
+		);
 	}
 
 	const art = await response.text();
@@ -44,6 +47,35 @@ function timeAgo(dateString) {
 		: "just now";
 }
 
+async function getStreakData(username) {
+	const url = `https://github-readme-streak-stats.herokuapp.com/?user=${username}`;
+
+	const res = await fetch(url);
+	if (!res.ok) {
+		throw new Error("Res status:", res.status, "Failed to get streak data");
+	}
+
+	const svgString = await res.text();
+	const $ = cheerio.load(svgString, { xmlMode: true });
+
+	const data = {
+		totalContributions: {
+			value: $('g[transform="translate(82.5, 48)"] text').text().trim(),
+			range: $('g[transform="translate(82.5, 114)"] text').text().trim(),
+		},
+		currentStreak: {
+			value: $('g[transform="translate(247.5, 48)"] text').text().trim(),
+			range: $('g[transform="translate(247.5, 145)"] text').text().trim(),
+		},
+		longestStreak: {
+			value: $('g[transform="translate(412.5, 48)"] text').text().trim(),
+			range: $('g[transform="translate(412.5, 114)"] text').text().trim(),
+		},
+	};
+
+	return data;
+}
+
 async function getTotalTime() {
 	const url = `https://wakatime.com/api/v1/users/current/all_time_since_today`;
 
@@ -74,7 +106,12 @@ async function getUserData() {
 	}
 
 	const data = await res.json();
+	console.log("Fetched GitHub user data");
 	const totalTime = await getTotalTime();
+	console.log("Fetched Wakatime Data");
+	const streakData = await getStreakData(data?.login || "Judge-Paul");
+	console.log("Fetched Streak Data");
+
 	return {
 		username: data?.login || "Judge-Paul",
 		profile_picture: data.avatar_url,
@@ -113,9 +150,18 @@ async function getUserData() {
 						} Public | ${data.total_private_repos} Private)`,
 					},
 					{ label: "Joined", value: timeAgo(data.created_at) },
-					{ label: "Contributions", value: "2087 (Aug 6, 2022 - Present)" },
-					{ label: "Current Streak", value: "0 (Nov 7)" },
-					{ label: "Longest Streak", value: "30 (Feb 4, 2023 - Mar 5, 2023)" },
+					{
+						label: "Contributions",
+						value: `${streakData.totalContributions.value} (${streakData.totalContributions.range})`,
+					},
+					{
+						label: "Current Streak",
+						value: `${streakData.currentStreak.value} (${streakData.currentStreak.range})`,
+					},
+					{
+						label: "Longest Streak",
+						value: `${streakData.longestStreak.value} (${streakData.longestStreak.range})`,
+					},
 				],
 			},
 		],
