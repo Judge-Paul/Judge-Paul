@@ -131,7 +131,7 @@ async function getUserData() {
 					{ label: "Role", value: "Software Developer" },
 					{ label: "Status", value: "Cracked" },
 					{ label: "Twitter", value: `@${data?.twitter_username}` },
-					{ label: "Portfolio", value: "https://jadge.vercel.app" },
+					{ label: "Portfolio", value: data?.blog },
 				],
 			},
 			{
