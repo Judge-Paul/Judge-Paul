@@ -24,8 +24,8 @@ function timeAgo(dateString) {
 	let diffInSeconds = Math.floor((now - past) / 1000);
 
 	const units = [
-		{ name: "year", seconds: 31536000 }, // 365 days
-		{ name: "month", seconds: 2592000 }, // 30 days
+		{ name: "year", seconds: 31536000 },
+		{ name: "month", seconds: 2592000 },
 		{ name: "day", seconds: 86400 },
 		{ name: "hour", seconds: 3600 },
 		{ name: "minute", seconds: 60 },
@@ -52,7 +52,11 @@ async function getStreakData(username) {
 
 	const res = await fetch(url);
 	if (!res.ok) {
-		throw new Error("Res status:", res.status, "Failed to get streak data");
+		throw new Error(
+			"Res status:",
+			`${res.status}`,
+			"Failed to get streak data",
+		);
 	}
 
 	const svgString = await res.text();
@@ -180,12 +184,12 @@ function generateSVGArt(art) {
 	const yInc = 8.6;
 
 	for (let i = 0; i < chunks.length; i++) {
-		svgArt += `<tspan x="${x}" y="${y}">${chunks[i]}</tspan>\n`;
+		svgArt += `<tspan x="${x}" y="${y}" textLength="1108px">${chunks[i]}</tspan>\n`;
 		const numY = Number(y);
 		y = (numY + yInc).toFixed(2);
 	}
 
-	return `<text x="100" y="100" fill="#c9d1d9" class="ascii">\n
+	return `<text x="100" y="100" fill="#c9d1d9" font-family="monospace">\n
 ${svgArt}
 </text>`;
 }
@@ -195,21 +199,19 @@ function generateSVGText(data) {
 	const lineHeight = (1282 - yPosition * 2) / 22;
 	const svgLines = [];
 
-	// Username
 	svgLines.push(
 		`<tspan x="1300" y="${yPosition.toFixed(2)}">${
 			data.username
 		}@GitHub</tspan>`,
 	);
 	yPosition += lineHeight;
-	yPosition = parseFloat(yPosition.toFixed(2)); // Round yPosition to 2 decimal places
+	yPosition = parseFloat(yPosition.toFixed(2));
 	svgLines.push(`<tspan x="1300" y="${yPosition}">---------------</tspan>`);
 	yPosition += lineHeight;
 	yPosition = parseFloat(yPosition.toFixed(2));
 
 	// Sections
 	data.sections.forEach((section) => {
-		// Section title
 		if (section.name) {
 			svgLines.push(
 				`<tspan x="1300" y="${yPosition}" class="keyColor">${section.name}</tspan>:`,
@@ -221,13 +223,12 @@ function generateSVGText(data) {
 			yPosition = parseFloat(yPosition.toFixed(2));
 		}
 
-		// Section items
 		section.items.forEach((item) => {
 			svgLines.push(
 				`<tspan x="1300" y="${yPosition}" class="keyColor">${item.label}</tspan>: <tspan class="valueColor">${item.value}</tspan>`,
 			);
 			yPosition += lineHeight;
-			yPosition = parseFloat(yPosition.toFixed(2)); // Round yPosition to 2 decimal places
+			yPosition = parseFloat(yPosition.toFixed(2));
 		});
 
 		// Extra space between sections
@@ -235,8 +236,7 @@ function generateSVGText(data) {
 		yPosition = parseFloat(yPosition.toFixed(2));
 	});
 
-	// Combine all lines into a single SVG text block
-	return `<text x="500" y="150" fill="#c9d1d9" font-size="40px">
+	return `<text x="1300" y="150" fill="#c9d1d9" font-size="40px">
 ${svgLines.join("\n")}
 </text>`;
 }
