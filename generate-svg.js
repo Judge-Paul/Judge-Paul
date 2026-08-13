@@ -94,8 +94,76 @@ async function getTotalTime() {
 	}
 
 	const data = await res.json();
-
 	return data.data.text;
+}
+
+async function getMostUsed() {
+	const url = `https://wakatime.com/api/v1/users/current/stats`;
+	const calculatingStatsMessage =
+		"Calculating stats for this user. Check back later.";
+	const maxAttempts = 3;
+	const retryDelay = 45_000;
+	let stats;
+
+	for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+		const res = await fetch(url, {
+			headers: {
+				Authorization: `Basic ${wakatimeKey}`,
+			},
+		});
+
+		if (!res.ok) {
+			throw new Error(`Res status: ${res.status}`);
+		}
+
+		const responseData = await res.json();
+		const message = responseData?.data?.message ?? responseData?.message;
+		const isCalculating = message?.includes(calculatingStatsMessage);
+
+		if (isCalculating && attempt === maxAttempts) {
+			throw new Error(calculatingStatsMessage);
+		}
+
+		if (isCalculating) {
+			console.log(
+				`WakaTime is calculating stats. Retrying in 45 seconds (${attempt}/${maxAttempts})...`,
+			);
+			await new Promise((resolve) => setTimeout(resolve, retryDelay));
+			continue;
+		}
+
+		stats = responseData?.data;
+		if (Array.isArray(stats?.editors) && Array.isArray(stats?.languages)) {
+			break;
+		}
+
+		throw new Error(
+			`Unexpected WakaTime stats response${message ? `: ${message}` : ""}`,
+		);
+	}
+
+	const BANNED_LANGS = [
+		"Other",
+		"Text",
+		"Markdown",
+		"JSON",
+		"YAML",
+		"HTML",
+		"CSS",
+		"TSConfig",
+		"XML",
+	];
+
+	const editors = stats.editors
+		.slice(0, 3)
+		.map((editor) => editor.name)
+		.join(", ");
+	const languages = stats.languages
+		.filter((lang) => !BANNED_LANGS.includes(lang.name))
+		.slice(0, 3)
+		.map((language) => language.name)
+		.join(", ");
+	return { editors, languages };
 }
 
 async function getUserData() {
@@ -113,6 +181,9 @@ async function getUserData() {
 	console.log("Fetched GitHub user data");
 	const totalTime = await getTotalTime();
 	console.log("Fetched Wakatime Data");
+	const { editors: mostUsedIDEs, languages: mostUsedLanguages } =
+		await getMostUsed();
+	console.log("Fetched WakaTime Most Used Data");
 	const streakData = await getStreakData(data?.login || "Judge-Paul");
 	console.log("Fetched Streak Data");
 
@@ -124,8 +195,8 @@ async function getUserData() {
 				items: [
 					{ label: "OS", value: "Windows 11, Linux Mint, Arch Linux" },
 					{ label: "Wakatime", value: totalTime },
-					{ label: "IDE", value: "VS Code, Sublime Text 3, Zed" },
-					{ label: "Languages", value: "JavaScript, TypeScript" },
+					{ label: "IDE", value: mostUsedIDEs },
+					{ label: "Languages", value: mostUsedLanguages },
 					{ label: "Frameworks", value: "React, Next.js, Express" },
 				],
 			},
