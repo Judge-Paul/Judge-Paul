@@ -48,18 +48,25 @@ function timeAgo(dateString) {
 }
 
 async function getStreakData(username) {
-	const url = `https://github-readme-streak-stats.herokuapp.com/?user=${username}`;
+	let svgString = process.env.STREAK_SVG;
 
-	const res = await fetch(url);
-	if (!res.ok) {
-		throw new Error(
-			"Res status:",
-			`${res.status}`,
-			"Failed to get streak data",
-		);
+	if (!svgString && process.env.STREAK_SVG_PATH) {
+		console.log(`Reading streak SVG from file: ${process.env.STREAK_SVG_PATH}`);
+		svgString = fs.readFileSync(process.env.STREAK_SVG_PATH, "utf-8");
 	}
 
-	const svgString = await res.text();
+	if (!svgString) {
+		const url = `https://github-readme-streak-stats.herokuapp.com/?user=${username}`;
+		console.log(`STREAK_SVG not set, fetching streak data from ${url}`);
+
+		const res = await fetch(url);
+		if (!res.ok) {
+			throw new Error(`Res status: ${res.status} Failed to get streak data`);
+		}
+
+		svgString = await res.text();
+	}
+
 	const $ = cheerio.load(svgString, { xmlMode: true });
 
 	const data = {
